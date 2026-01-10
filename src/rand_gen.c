@@ -1,7 +1,4 @@
-#include "rand_gen.h"
-#include<stdio.h>
-#include<time.h>
-#include<stdlib.h>
+#include "universal.h"
 unsigned long seed = 12345;
 
 void set_seed(){
