@@ -1,11 +1,6 @@
 #include "universal.h"
 
-int getComputerChoice(){
-    set_seed();
-    return randomNumberGenerator(1, 3);
-}
-
-int getPlayerChoice(){
+int getPlayerChoiceEndless(){
     int choice;
     printf("\n");
     printf("Choose one among the following: \n");
@@ -18,7 +13,8 @@ int getPlayerChoice(){
     return choice;
 }
 
-void determineWinner(int player, int computer){
+
+void determineWinnerEndless(int player, int computer){
     switch(player){
         case 1 : 
             switch(computer){
@@ -38,39 +34,34 @@ void determineWinner(int player, int computer){
                 case 2 : printf("You WIN!!!"); break;
                 case 3 : printf("It's a DRAW !!"); break;
             } break;
-        default : printf("Please enter a valid option only.");
+        default : printf("\nPlease enter a valid option only.\n");
     }
 }
 
-char* moveName(int move){
-    switch(move){
-        case 1 : return "Rock!";
-        case 2 : return "Paper!";
-        case 3 : return "Scissors!";
-        default : printf("Experiencing Technical Difficulties.\n");
-    }
-}
-
-void start(){
+void endless(){
     printf("________________________________________________________________________________\n");
     do{
         int computerChoice = getComputerChoice();
-        int playerChoice = getPlayerChoice();
-
-        if(playerChoice == 4){
-            printf("Thank you for playing :)\n");
-            exit(1);
+        int playerChoice = getPlayerChoiceEndless();
+        if(playerChoice != 1 && playerChoice !=2 && playerChoice !=3){
+            if(playerChoice == 4){
+                printf("Thank you for playing :)\n\n");
+                break;
+            }else{
+                printf("\nPlease enter a valid option only.\n\n");
+                break;
+            }
         }
-
         char * computerMove = moveName(computerChoice);
         char * playerMove = moveName(playerChoice);
         printf("You -> %s\n", playerMove);
         printf("Computer -> %s\n", computerMove);
 
         printf("\n");        
-        determineWinner(playerChoice, computerChoice);
+        determineWinnerEndless(playerChoice, computerChoice);
         printf("\n");
         
         printf("________________________________________________________________________________\n");
     }while(1);
+    start();
 }

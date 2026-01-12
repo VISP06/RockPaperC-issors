@@ -9,7 +9,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
-#include "game_loop_func.h"
+#include "main_game.h"
 #include "rand_gen.h"
 
 #endif
