@@ -52,6 +52,12 @@ void bestOfThree(){
         int computerChoice = getComputerChoice();
         int playerChoice = getPlayerChoice();
 
+        if(playerChoice != 1 && playerChoice !=2 && playerChoice !=3){
+                printf("\nPlease enter a valid option only.\n\n");
+                continue;
+            
+        }
+
         char * computerMove = moveName(computerChoice);
         char * playerMove = moveName(playerChoice);
         printf("You -> %s\n", playerMove);
@@ -66,8 +72,7 @@ void bestOfThree(){
             playerWinCount++;
         }else{
             printf("It's a DRAW !!\n");
-            playerWinCount++;
-            computerWinCount++;
+            continue;
         }
         printf("\n");
         
