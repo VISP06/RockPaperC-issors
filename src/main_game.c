@@ -33,7 +33,7 @@ void start(){
         case 1 : bestOfThree(); break;
         case 2 : endless(); break;
         case 3 : exit(1);
-        default : printf("Please pick anyone of the options only.");
+        default : printf("Please pick anyone of the options only.\n\n");
     }
-    return;
+    start();
 }

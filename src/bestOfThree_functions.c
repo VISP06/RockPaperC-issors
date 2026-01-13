@@ -53,8 +53,8 @@ void bestOfThree(){
         int playerChoice = getPlayerChoice();
 
         if(playerChoice != 1 && playerChoice !=2 && playerChoice !=3){
-                printf("\nPlease enter a valid option only.\n\n");
-                continue;
+            printf("\nPlease enter a valid option only.\n\n");
+            continue;
             
         }
 
