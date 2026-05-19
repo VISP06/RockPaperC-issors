@@ -2,6 +2,11 @@
 
 A C implementation of the traditional Rock Paper Scissors game that is modular and console-based. A unique pseudo-random number generator and several game modes are included in this project.
 
+## Pictures Of Gameplay
+<img width="638" height="528" alt="Image" src="https://github.com/user-attachments/assets/b8eb7aad-1b01-4d19-90e2-eb16189bae35" />
+
+<img width="661" height="601" alt="Image" src="https://github.com/user-attachments/assets/4a88b86b-1969-44e0-b93e-6528b7bbba00" />
+
 ## 🎮 Features
 
 Modular Architecture: For ease of maintenance, logic is divided among several files (Searching, Sorting, Game Modes).
@@ -67,8 +72,3 @@ Linux/macOS:
 ```bash
 ./main
 ```
-
-## Pictures Of Gameplay
-<img width="638" height="528" alt="Image" src="https://github.com/user-attachments/assets/b8eb7aad-1b01-4d19-90e2-eb16189bae35" />
-
-<img width="661" height="601" alt="Image" src="https://github.com/user-attachments/assets/4a88b86b-1969-44e0-b93e-6528b7bbba00" />
